@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Marvel App</string>
+    <string name="marvel_studios">Marvel Studios</string>
+    <string name="choose_hero">Choose your hero</string>
+    <string name="deadpool">Deadpool</string>
+    <string name="ironMan">Iron Man</string>
+    <string name="spiderMan">Spider Man</string>
+    <string name="deadpoolDescription">Please don’t make the super suit green…or animated!</string>
+    <string name="ironManDescription">I AM IRON MAN</string>
+    <string name="spiderManDescription">In iron suit</string>
+    <string name="hero_not_found">Hero has not been found</string>
+    <string name="error">Something went wrong</string>
+</resources>
