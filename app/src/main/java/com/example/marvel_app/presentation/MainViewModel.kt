@@ -3,13 +3,15 @@ package com.example.marvel_app.presentation
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.marvel_app.data.HeroesRepository
-import com.example.marvel_app.data.HeroesRepositoryImplementation
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
-class MainViewModel(
-    private val heroesRepository: HeroesRepository = HeroesRepositoryImplementation()
+@HiltViewModel
+class MainViewModel @Inject constructor(
+    private val heroesRepository: HeroesRepository
 ) : ViewModel() {
 
     private val mutableStateFlow: MutableStateFlow<MainState> = MutableStateFlow(MainState.Loading)
